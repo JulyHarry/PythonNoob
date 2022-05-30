@@ -1,7 +1,5 @@
 from typing import Optional, List
 
-from LeetCode.Utils.TreeUtils import TreeNode
-
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
