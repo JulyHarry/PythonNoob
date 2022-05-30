@@ -1,9 +1,16 @@
-from typing import List
+from typing import Optional, List
 
-from LeetCode.Tree import TreeNode
+from LeetCode.Utils.TreeUtils import TreeNode
 
 
-def tree_build(treelist) -> TreeNode:
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+
+def tree_build(treelist) -> Optional[TreeNode]:
     if len(treelist) == 0:
         return None
     root = None
@@ -20,7 +27,7 @@ def tree_build(treelist) -> TreeNode:
     return root
 
 
-def tree_generate(root: TreeNode, i: int, n: int, treelist: List):
+def tree_generate(root: Optional[TreeNode], i: int, n: int, treelist: List):
     left = 2 * i + 1
     if left < n and treelist[left] != 'null':
         try:
@@ -36,7 +43,7 @@ def tree_generate(root: TreeNode, i: int, n: int, treelist: List):
         tree_generate(root.right, left + 1, n, treelist)
 
 
-def tree_pretraversal(root: TreeNode) -> None:
+def tree_pretraversal(root: Optional[TreeNode]) -> None:
     res = []
 
     def pre_traversal_dfs(root: TreeNode):
@@ -50,16 +57,10 @@ def tree_pretraversal(root: TreeNode) -> None:
     print(res)
 
 
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
-
-# if __name__ == '__main__':
-#     nums = [1, 0, 1, 0, 1, 0, 1, 2, 'null', 3]
-#     nums1 = '[1, 0, 1, 0, 1, 0, 1, 2, null, 3]'
-#     root = tree_build(nums)
-#     tree_pretraversal(root)
-#     root = tree_build(nums1)
-#     tree_pretraversal(root)
+if __name__ == '__main__':
+    nums = [1, 0, 1, 0, 1, 0, 1, 2, 'null', 3]
+    nums1 = '[1, 0, 1, 0, 1, 0, 1, 2, null, 3]'
+    root = tree_build(nums)
+    tree_pretraversal(root)
+    root = tree_build(nums1)
+    tree_pretraversal(root)
