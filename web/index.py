@@ -1,20 +1,38 @@
+import binascii
 import configparser
 
 import pymysql.cursors
 from flask import Flask, render_template, request, url_for, flash, redirect
+from pyDes import des, CBC, PAD_PKCS5
 from pymysql import connect
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Fighting!!!!!!!!'
 
 
+def des_decrypt(s, secret):
+    iv = secret
+    k = des(secret, CBC, iv, pad=None, padmode=PAD_PKCS5)
+    de = k.decrypt(binascii.a2b_hex(s), padmode=PAD_PKCS5).decode('gbk')
+    return de
+
+
+def get_decrypt_info(configparser: configparser.ConfigParser, key: str):
+    object = 'MYSQL-INFO'
+    dict = {'user': des_decrypt(configparser.get(object, 'user'), key),
+            'password': des_decrypt(configparser.get(object, 'password'), key),
+            'host': des_decrypt(configparser.get(object, 'host'), key),
+            'port': des_decrypt(configparser.get(object, 'port'), key),
+            'database': des_decrypt(configparser.get(object, 'database'), key)}
+    return dict
+
+
 def get_mysql_info():
     cf = configparser.ConfigParser()
     cf.read('config.ini')
     object = 'MYSQL-INFO'
-    dict = {"user": cf.get(object, "user"), "password": cf.get(object, "password"), "host": cf.get(object, "host"),
-            "port": cf.get(object, "port"), "database": cf.get(object, "database")}
-    return dict
+    key = cf.get(object, "key")
+    return get_decrypt_info(cf, key)
 
 
 # 创建一个函数用来获取数据库链接
