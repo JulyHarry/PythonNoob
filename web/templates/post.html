@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{% block title %} {{ post['title'] }} {% endblock %}</h2>
+<span class="badge badge-primary">修改时间： {{ post['modifytime'] }}</span>
+<span class="badge badge-info">作者： {{ post['author'] }}</span>
+<br>
+<span class="badge badge-success">点赞： {{ post['likes'] }}</span>
+<span class="badge badge-dark">点踩： {{ post['hates'] }}</span>
+<span class="badge badge-danger">评分： {{ post['hates'] }}</span>
+<p>{{ post['content'] }}</p>
+
+<hr>
+<form action="{{ url_for('delete', id=post['contentid']) }}" method="POST">
+    <input type="submit" value="删除" class="btn btn-danger btn-sm"
+           onclick="return confirm('确定要删除吗?')">
+</form>
+
+{% endblock %}
