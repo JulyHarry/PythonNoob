@@ -1,3 +1,5 @@
+import configparser
+
 import pymysql.cursors
 from flask import Flask, render_template, request, url_for, flash, redirect
 from pymysql import connect
@@ -6,11 +8,21 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Fighting!!!!!!!!'
 
 
+def get_mysql_info():
+    cf = configparser.ConfigParser()
+    cf.read('config.ini')
+    object = 'MYSQL-INFO'
+    dict = {"user": cf.get(object, "user"), "password": cf.get(object, "password"), "host": cf.get(object, "host"),
+            "port": cf.get(object, "port"), "database": cf.get(object, "database")}
+    return dict
+
+
 # 创建一个函数用来获取数据库链接
 def get_db_connection():
     # 创建数据库链接到database.db文件
-    con = connect(user='harry', password='1234asdf', host='114.115.180.222', port=3306, database='web',
-                  cursorclass=pymysql.cursors.DictCursor)
+    item = get_mysql_info()
+    con = connect(user=item['user'], password=item['password'], host=item['host'], port=int(item['port']),
+                  database=item['database'], cursorclass=pymysql.cursors.DictCursor)
     cursor = con.cursor()
     return con, cursor
 
