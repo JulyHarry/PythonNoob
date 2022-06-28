@@ -17,28 +17,22 @@ def des_decrypt(s, secret):
     return de
 
 
-def get_decrypt_info(configparser: configparser.ConfigParser, key: str):
-    object = 'MYSQL-INFO'
-    dict = {'user': des_decrypt(configparser.get(object, 'user'), key),
-            'password': des_decrypt(configparser.get(object, 'password'), key),
-            'host': des_decrypt(configparser.get(object, 'host'), key),
-            'port': des_decrypt(configparser.get(object, 'port'), key),
-            'database': des_decrypt(configparser.get(object, 'database'), key)}
-    return dict
-
-
-def get_mysql_info():
+def decrypt_mysql_info(secretfile: str, filename: str, section: str):
+    with open(secretfile, 'r') as f:
+        secret_key = f.read()
     cf = configparser.ConfigParser()
-    cf.read('config.ini')
-    object = 'MYSQL-INFO'
-    key = cf.get(object, "key")
-    return get_decrypt_info(cf, key)
+    cf.read(filename)
+    dict = {'user': des_decrypt(cf.get(section, 'user'), secret_key),
+            'password': des_decrypt(cf.get(section, 'password'), secret_key),
+            'host': des_decrypt(cf.get(section, 'host'), secret_key),
+            'port': des_decrypt(cf.get(section, 'port'), secret_key),
+            'database': des_decrypt(cf.get(section, 'database'), secret_key)}
+    return dict
 
 
 # 创建一个函数用来获取数据库链接
 def get_db_connection():
-    # 创建数据库链接到database.db文件
-    item = get_mysql_info()
+    item = decrypt_mysql_info(secretfile="secret_key", filename='encrypt_config.ini', section='MYSQL-INFO')
     con = connect(user=item['user'], password=item['password'], host=item['host'], port=int(item['port']),
                   database=item['database'], cursorclass=pymysql.cursors.DictCursor)
     cursor = con.cursor()
