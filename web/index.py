@@ -32,7 +32,8 @@ def decrypt_mysql_info(secretfile: str, filename: str, section: str):
 
 # 创建一个函数用来获取数据库链接
 def get_db_connection():
-    item = decrypt_mysql_info(secretfile="secret_key", filename='encrypt_config.ini', section='MYSQL-INFO')
+    item = decrypt_mysql_info(secretfile="config/secret_key", filename='config/encrypt_config.ini',
+                              section='MYSQL-INFO')
     con = connect(user=item['user'], password=item['password'], host=item['host'], port=int(item['port']),
                   database=item['database'], cursorclass=pymysql.cursors.DictCursor)
     cursor = con.cursor()
@@ -43,7 +44,6 @@ def get_db_connection():
 def get_post(post_id):
     con, cursor = get_db_connection()
     cursor.execute('SELECT * FROM web.content WHERE contentid = %(id)s', {'id': post_id})
-    # cursor.execute('SELECT * FROM web.content WHERE contentid = %(id)s', {'id': post_id})
     post = cursor.fetchone()
     con.close()
     return post

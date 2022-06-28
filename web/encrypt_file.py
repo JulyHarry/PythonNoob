@@ -21,6 +21,8 @@ def des_decrypt(secret_key: str, content: str) -> str:
 
 
 def encrypt_file(filename: str, secret_key: str) -> None:
+    path = '/'.join(filename.split('/')[:-1])
+    name = filename.split('/')[-1]
     src_config = configparser.ConfigParser()
     dst_config = configparser.ConfigParser()
     src_config.read(filename, encoding='utf-8')
@@ -29,12 +31,12 @@ def encrypt_file(filename: str, secret_key: str) -> None:
             dst_config.add_section(section)
         for option in src_config.options(section):
             dst_config.set(section, option, des_encrypt(secret_key, src_config.get(section, option)))
-    with open('encrypt_{}'.format(filename), 'w') as fp:
+    with open('{}/encrypt_{}'.format(path, name), 'w') as fp:
         dst_config.write(fp)
 
 
 if __name__ == '__main__':
-    with open('secret_key', 'r') as f:
+    with open('config/secret_key', 'r') as f:
         secret_key = f.read()
-    filename = "config.ini"
+    filename = "config/config.ini"
     encrypt_file(filename, secret_key)
