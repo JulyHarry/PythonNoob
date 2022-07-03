@@ -1,0 +1,15 @@
+{% extends "base2.html" %}
+{% block content %}
+    {% set navigation = ["aaa","bbb","ccc"] %}
+    {% set iterated = false %}
+    {% for item in navigation %}
+        <p>{{ item }}</p>
+        {% if not iterated %} did not iterate {% endif %}
+        {% set iterated = true %}
+    {% endfor %}
+{% endblock %}
+{#
+{% set iterated = false %}
+{% if not iterated %} did not iterate {% endif %}
+{% set iterated = true %}
+#}
