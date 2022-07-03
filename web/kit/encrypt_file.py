@@ -36,7 +36,7 @@ def encrypt_file(filename: str, secret_key: str) -> None:
 
 
 if __name__ == '__main__':
-    with open('config/secret_key', 'r') as f:
+    with open('../config/secret_key', 'r') as f:
         secret_key = f.read()
-    filename = "config/config.ini"
+    filename = "../config/config.ini"
     encrypt_file(filename, secret_key)
