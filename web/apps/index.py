@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template
 
-from .common import get_db_connection
+from web.kit.common import get_db_connection
 
 bp = Blueprint('index', __name__, url_prefix='/')
 

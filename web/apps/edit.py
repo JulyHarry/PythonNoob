@@ -1,6 +1,6 @@
 from flask import Blueprint, request, flash, redirect, url_for, render_template
 
-from .common import get_post, get_db_connection
+from web.kit import get_post, get_db_connection
 
 bp = Blueprint('edit', __name__, subdomain='edit', url_prefix='/editing/')
 

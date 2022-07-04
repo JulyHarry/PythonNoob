@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, flash, redirect, url_for
 
-from .common import get_db_connection
+from web.kit import get_db_connection
 
 bp = Blueprint('new', __name__, url_prefix='/new')
 

@@ -1,0 +1,12 @@
+from .about import bp as about_bp
+from .cookies import bp as cookies_bp
+from .delete import bp as delete_bp
+from .edit import bp as edit_bp
+from .error import bp as error_bp
+from .hello import bp as hello_bp
+from .index import bp as index_bp
+from .login import bp as login_bp
+from .new import bp as new_bp
+from .post import bp as post_bp
+from .session import bp as session_bp
+from .test import bp as test_bp

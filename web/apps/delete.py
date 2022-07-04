@@ -1,6 +1,6 @@
 from flask import Blueprint, flash, redirect, url_for
 
-from .common import get_db_connection, get_post
+from web.kit import get_db_connection, get_post
 
 bp = Blueprint('delete', __name__, url_prefix='/delete/')
 

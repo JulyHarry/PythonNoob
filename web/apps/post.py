@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template
 
-from .common import get_post
+from web.kit import get_post
 
 bp = Blueprint('post', __name__, subdomain='post', url_prefix='/post/')
 
