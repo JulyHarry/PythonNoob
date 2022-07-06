@@ -1,8 +1,13 @@
-from flask import Blueprint
+from flask import Blueprint, render_template
 
-bp = Blueprint('user', __name__, url_prefix='/user/')
+bp = Blueprint('user', __name__, url_prefix='/')
 
 
 @bp.route("/login")
 def login():
-    return "登录"
+    return render_template("login.html")
+
+
+@bp.route("/register")
+def register():
+    return render_template('register.html')
