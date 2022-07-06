@@ -6,58 +6,38 @@
 
 {% block content %}
     <form>
-        <div class="row g-2 align-items-center">
-            <div class="col-6">
-                <div class="form-floating mt-3 mb-3">
-                    <input type="email" class="form-control" id="email" placeholder="邮箱">
-                    <label for="email">邮箱</label>
-                </div>
-            </div>
-            <div class="col-4">
-                <div id="emailHelpBlock" class="form-text">
-                    邮箱是登录的重要凭据，建议使用常用邮箱
-                </div>
-            </div>
+        <div class="form-floating mt-3">
+            <input type="email" class="form-control" id="email" placeholder="邮箱">
+            <label for="email">邮箱</label>
         </div>
-        <div class="row g-2 align-items-center">
-            <div class="col-6">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="username" placeholder="用户名">
-                    <label for="username">用户名</label>
-                </div>
-            </div>
-            <div class="col-4">
-                <div id="usernameHelpBlock" class="form-text">
-                    用户名是唯一的，且不能修改，是登录的重要凭据
-                </div>
-            </div>
+        <div id="emailHelpBlock" class="form-text">
+            邮箱是登录的重要凭据，建议使用常用邮箱
         </div>
-        <div class="row g-2 align-items-center">
-            <div class="col-6">
-                <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="password" placeholder="密码">
-                    <label for="password">密码</label>
-                </div>
-            </div>
-            <div class="col-4">
-                <div id="passwordHelpBlock" class="form-text">
-                    您的密码长度应为8-20, 同时包含字母和数字, 不能包含空格、表情等特殊字符
-                </div>
-            </div>
+
+        <div class="form-floating mt-3">
+            <input type="text" class="form-control" id="username" placeholder="用户名">
+            <label for="username">用户名</label>
         </div>
-        <div class="row g-2 align-items-center">
-            <div class="col-6">
-                <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="passwordConfirm" placeholder="密码">
-                    <label for="password">确认密码</label>
-                </div>
-            </div>
-            <div class="col-4">
-                <div id="ppasswordConfirmHelpBlock" class="form-text">
-                    请再输入一遍密码
-                </div>
-            </div>
+        <div id="usernameHelpBlock" class="form-text">
+            用户名是唯一的，且不能修改，是登录的重要凭据
         </div>
+
+        <div class="form-floating mt-3">
+            <input type="password" class="form-control" id="password" placeholder="密码">
+            <label for="password">密码</label>
+        </div>
+        <div id="passwordHelpBlock" class="form-text">
+            您的密码长度应为8-20, 同时包含字母和数字, 不能包含空格、表情等特殊字符
+        </div>
+        <div class="form-floating mt-3">
+            <input type="password" class="form-control" id="passwordConfirm" placeholder="密码">
+            <label for="password">确认密码</label>
+        </div>
+
+        <div id="ppasswordConfirmHelpBlock" class="form-text">
+            请再输入一遍密码
+        </div>
+
         <div class="container">
             <div class="row">
                 <div class="col"></div>
