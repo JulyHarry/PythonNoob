@@ -35,6 +35,18 @@
             </div>
             <div class="row">
                 <div class="col"></div>
+                <div class="col">
+                    <div class="form-check" style="text-align:center">
+                        <input class="form-check-input" type="checkbox" id="keepme">
+                        <label class="form-check-label" for="keepme">
+                            保持登录状态
+                        </label>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row mt-3">
+                <div class="col"></div>
                 <div class="col" style="text-align:center">
                     <button type="button" class="btn btn-primary">登录</button>
                 </div>
@@ -44,16 +56,5 @@
 
     </form>
 {% endblock content %}
-
-
-<div class="container">
-    <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="keepme">
-        <label class="form-check-label" for="keepme">
-            保持登录状态
-        </label>
-    </div>
-</div>
-<button type="submit" class="btn btn-primary">登录</button>
 
 

@@ -11,7 +11,7 @@
 {% block content %}
     <form>
         <div class="container">
-            <div class="row">
+            <div class="row mt-3">
                 <div class="col"></div>
                 <div class="col">
                     <div class="form-floating mt-3">
@@ -21,8 +21,7 @@
                 </div>
                 <div class="col"></div>
             </div>
-        </div>
-        <div class="container">
+
             <div class="row">
                 <div class="col"></div>
                 <div class="col">
@@ -32,20 +31,18 @@
                 </div>
                 <div class="col"></div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
+
+            <div class="row mt-3">
                 <div class="col"></div>
                 <div class="col">
-                    <div class="form-floating mt-3">
+                    <div class="form-floating">
                         <input type="text" class="form-control" id="username" placeholder="用户名">
                         <label for="username">用户名</label>
                     </div>
                 </div>
                 <div class="col"></div>
             </div>
-        </div>
-        <div class="container">
+
             <div class="row">
                 <div class="col"></div>
                 <div class="col">
@@ -55,21 +52,18 @@
                 </div>
                 <div class="col"></div>
             </div>
-        </div>
 
-        <div class="container">
-            <div class="row">
+            <div class="row mt-3">
                 <div class="col"></div>
                 <div class="col">
-                    <div class="form-floating mt-3">
+                    <div class="form-floating">
                         <input type="password" class="form-control" id="password" placeholder="密码">
                         <label for="password">密码</label>
                     </div>
                 </div>
                 <div class="col"></div>
             </div>
-        </div>
-        <div class="container">
+
             <div class="row">
                 <div class="col"></div>
                 <div class="col">
@@ -79,34 +73,43 @@
                 </div>
                 <div class="col"></div>
             </div>
-        </div>
 
-        <div class="container">
-            <div class="row">
+            <div class="row mt-3">
                 <div class="col"></div>
                 <div class="col">
-                    <div class="form-floating mt-3">
+                    <div class="form-floating">
                         <input type="password" class="form-control" id="passwordConfirm" placeholder="密码">
                         <label for="password">确认密码</label>
                     </div>
                 </div>
                 <div class="col"></div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
+
+            <div class="row mb-3">
                 <div class="col"></div>
                 <div class="col">
-                    <div id="ppasswordConfirmHelpBlock" class="form-text mb-3">
+                    <div id="ppasswordConfirmHelpBlock" class="form-text">
                         请再输入一遍密码
                     </div>
                 </div>
                 <div class="col"></div>
             </div>
-        </div>
 
-        <div class="container">
             <div class="row">
+                <div class="col"></div>
+                <div class="col" style="font-size: 14px">
+                    <div class="form-check text-center">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                               required>
+                        <label class="form-check-label" for="invalidCheck2">
+                            同意协议和条款
+                        </label>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+
+            <div class="row mt-3">
                 <div class="col"></div>
                 <div class="col" style="text-align:center">
                     <button type="button" class="btn btn-primary">注册</button>
