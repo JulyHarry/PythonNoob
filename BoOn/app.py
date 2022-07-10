@@ -1,10 +1,10 @@
 from flask import Flask
 
-import config
 from blueprints import qa_bp, user_bp, test_bp
+from config import flask_config
 
 app = Flask(__name__)
-app.config.from_object(config)
+app.config.from_object(flask_config)
 app.register_blueprint(qa_bp)
 app.register_blueprint(user_bp)
 app.register_blueprint(test_bp)

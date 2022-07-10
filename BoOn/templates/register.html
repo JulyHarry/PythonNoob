@@ -8,14 +8,23 @@
     active
 {% endblock %}
 
+{% macro takeplace(id) %}
+    {% if request.form[id] %}
+        {{ request.form[id] }}
+    {% else %}
+        {{ id }}
+    {% endif %}
+{% endmacro %}
+
 {% block content %}
-    <form>
+    <form action="{{ url_for('user.register') }}" method="post">
         <div class="container">
             <div class="row mt-3">
                 <div class="col"></div>
                 <div class="col">
                     <div class="form-floating mt-3">
-                        <input type="email" class="form-control" id="email" placeholder="邮箱">
+                        <input type="email" class="form-control" id="email" name="email"
+                               placeholder="{{ takeplace('email') }}">
                         <label for="email">邮箱</label>
                     </div>
                 </div>
@@ -36,7 +45,8 @@
                 <div class="col"></div>
                 <div class="col">
                     <div class="form-floating">
-                        <input type="text" class="form-control" id="username" placeholder="用户名">
+                        <input type="text" class="form-control" id="username" name="username"
+                               placeholder="{{ takeplace('username') }}">
                         <label for="username">用户名</label>
                     </div>
                 </div>
@@ -57,7 +67,29 @@
                 <div class="col"></div>
                 <div class="col">
                     <div class="form-floating">
-                        <input type="password" class="form-control" id="password" placeholder="密码">
+                        <input type="text" class="form-control" id="nickname" name="nickname"
+                               placeholder="{{ takeplace('nickname') }}">
+                        <label for="nickname">昵称</label>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <div id="nicknameHelpBlock" class="form-text">
+                        昵称是可以让其他用户看到的名字，可以随时修改
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col"></div>
+                <div class="col">
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="密码">
                         <label for="password">密码</label>
                     </div>
                 </div>
@@ -78,7 +110,8 @@
                 <div class="col"></div>
                 <div class="col">
                     <div class="form-floating">
-                        <input type="password" class="form-control" id="passwordConfirm" placeholder="密码">
+                        <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm"
+                               placeholder="密码">
                         <label for="password">确认密码</label>
                     </div>
                 </div>
@@ -88,7 +121,7 @@
             <div class="row mb-3">
                 <div class="col"></div>
                 <div class="col">
-                    <div id="ppasswordConfirmHelpBlock" class="form-text">
+                    <div id="passwordConfirmHelpBlock" class="form-text">
                         请再输入一遍密码
                     </div>
                 </div>
@@ -112,7 +145,7 @@
             <div class="row mt-3">
                 <div class="col"></div>
                 <div class="col" style="text-align:center">
-                    <button type="button" class="btn btn-primary">注册</button>
+                    <button type="submit" class="btn btn-primary">注册</button>
                 </div>
                 <div class="col"></div>
             </div>
