@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %} 发布问答 {% endblock title %}
+
+{% block content %}
+    <div class="row mt-1">
+        <div class="col"></div>
+        <div class="col-8">
+            <form action="{{ url_for('qa.publish') }}" method="post">
+                <div class="form-group">
+                    <div class="form-group mb-3">
+                        <label class="form-label" for="title">标题</label>
+                        <input class="form-control" type="text" id="title" name="title" placeholder="请输入标题"
+                               value="{{ request.title or publish.title }}">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label" for="content">内容</label>
+                        <textarea class="form-control" id="content" rows="4" name="content"
+                                  placeholder="请输入内容">{{ request.content or publish.content }}</textarea>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <button class="btn btn-primary" type="submit">发布</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+
+
+
+{% endblock content %}

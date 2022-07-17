@@ -27,7 +27,7 @@
                        href="{{ url_for('qa.index') }}">首页</a>
                 </li>
                 <li class="nav-item {% block publish %} {% endblock %}">
-                    <a class="nav-link" href="#">发布</a>
+                    <a class="nav-link" href="{{ url_for('qa.publish') }}">发布</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -50,19 +50,31 @@
                     </form>
                 </li>
             </ul>
-            <ul class="navbar-nav">
-                <form class="d-flex">
-                    <li class="nav-item me-1">
-                        <a class="nav-link {% block loginactive %}{% endblock %}"
-                           href="{{ url_for('user.login') }}">登录</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {% block registeractive %}{% endblock %}"
-                           href="{{ url_for('user.register') }}">注册</a>
-                    </li>
-                </form>
-            </ul>
-
+            {% if userinfo %}
+                <ul class="navbar-nav">
+                    <form class="d-flex">
+                        <li class="nav-item me-1">
+                            <a class="nav-link" href="#">{{ userinfo.nickname }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('user.logout') }}">注销</a>
+                        </li>
+                    </form>
+                </ul>
+            {% else %}
+                <ul class="navbar-nav">
+                    <form class="d-flex">
+                        <li class="nav-item me-1">
+                            <a class="nav-link {% block loginactive %}{% endblock %}"
+                               href="{{ url_for('user.login') }}">登录</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% block registeractive %}{% endblock %}"
+                               href="{{ url_for('user.register') }}">注册</a>
+                        </li>
+                    </form>
+                </ul>
+            {% endif %}
         </div>
     </div>
 </nav>

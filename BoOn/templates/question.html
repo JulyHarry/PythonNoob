@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %} 查看问题 {% endblock title %}
+
+{% block content %}
+    <div class="row mt-3">
+        <div class="col"></div>
+        <div class="col-8">
+            <div class="fs-2">
+                {{ post.title }}
+            </div>
+            <span class="badge bg-primary">{{ post['updatetime'] }}</span>
+            <span class="badge bg-primary">{{ post['author'] }}</span>
+            <hr>
+            <div>
+                {{ post.content }}
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+{% endblock content %}

@@ -1,6 +1,6 @@
 import hashlib
 
-from flask import Blueprint, render_template, request, redirect, url_for, flash
+from flask import Blueprint, render_template, request, redirect, url_for, flash, session
 
 from BoOn.kits import create_user, SUCCESS_FLAG, RegisterForm, email_login, username_login, exist_account
 
@@ -10,11 +10,12 @@ bp = Blueprint('user', __name__, url_prefix='/')
 @bp.route("/login", methods=('GET', 'POST'))
 def login():
     if request.method == 'POST':
-        info = {'username': request.form['account'],
+        info = {'account': request.form['account'],
                 'email': request.form['account'],
                 'password': hashlib.md5(request.form['password'].encode('utf-8')).hexdigest()}
         if exist_account(info):
             if email_login(info) or username_login(info):
+                session['account'] = info['account']
                 return redirect(url_for('qa.index'))
             else:
                 flash('密码不正确！')
@@ -40,11 +41,8 @@ def register():
         username = form.username.data
         nickname = form.nickname.data
         password = form.password.data
-        passwordConfirm = form.passwordConfirm.data
-        print(type(password))
-        print(email, username, nickname, password, passwordConfirm)
+        # passwordConfirm = form.passwordConfirm.data
         x = hashlib.md5(str(password).encode('utf-8')).hexdigest()
-        print(x)
         info = (email, username, nickname, hashlib.md5(password.encode('utf-8')).hexdigest())
         res = create_user(info)
         if res == SUCCESS_FLAG:
@@ -55,3 +53,9 @@ def register():
             return redirect(url_for('user.register'))
     else:
         return render_template('register.html')
+
+
+@bp.route("/logout")
+def logout():
+    session.clear()
+    return redirect(url_for('qa.index'))

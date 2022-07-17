@@ -47,7 +47,7 @@ def not_exists_info(**info: Any) -> str:
 
 
 def email_login(info: dict) -> bool:
-    sql = 'select 1 from user_info where email = %(username)s and password = %(password)s'
+    sql = 'select 1 from user_info where email = %(account)s and password = %(password)s'
     con, cursor = get_db_connection()
     cursor.execute(sql, info)
     cnt = cursor.fetchone()
@@ -57,7 +57,7 @@ def email_login(info: dict) -> bool:
 
 
 def username_login(info: dict) -> bool:
-    sql = 'select 1 from user_info where username = %(username)s and password = %(password)s'
+    sql = 'select 1 from user_info where username = %(account)s and password = %(password)s'
     con, cursor = get_db_connection()
     cursor.execute(sql, info)
     cnt = cursor.fetchone()
@@ -67,7 +67,7 @@ def username_login(info: dict) -> bool:
 
 
 def exist_account(info: dict) -> bool:
-    sql = 'select 1 from user_info where username = %(username)s or email = %(username)s'
+    sql = 'select 1 from user_info where username = %(account)s or email = %(account)s'
     con, cursor = get_db_connection()
     cursor.execute(sql, info)
     cnt = cursor.fetchone()
