@@ -24,7 +24,7 @@ def create_user(info: tuple):
     con.commit()
     cursor.close()
     con.close()
-    return "over"
+    return SUCCESS_FLAG
 
 
 def not_exists_info(**info: Any) -> str:
@@ -44,3 +44,33 @@ def not_exists_info(**info: Any) -> str:
     cursor.close()
     con.close()
     return SUCCESS_FLAG
+
+
+def email_login(info: dict) -> bool:
+    sql = 'select 1 from user_info where email = %(username)s and password = %(password)s'
+    con, cursor = get_db_connection()
+    cursor.execute(sql, info)
+    cnt = cursor.fetchone()
+    if cnt:
+        return True
+    return False
+
+
+def username_login(info: dict) -> bool:
+    sql = 'select 1 from user_info where username = %(username)s and password = %(password)s'
+    con, cursor = get_db_connection()
+    cursor.execute(sql, info)
+    cnt = cursor.fetchone()
+    if cnt:
+        return True
+    return False
+
+
+def exist_account(info: dict) -> bool:
+    sql = 'select 1 from user_info where username = %(username)s or email = %(username)s'
+    con, cursor = get_db_connection()
+    cursor.execute(sql, info)
+    cnt = cursor.fetchone()
+    if cnt:
+        return True
+    return False

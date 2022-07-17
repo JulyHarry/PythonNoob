@@ -10,15 +10,14 @@
 
 
 {% block content %}
-    <form>
-
+    <form method="post" action="{{ url_for('user.login') }}">
         <div class="container">
             <div class="row">
                 <div class="col"></div>
                 <div class="col">
                     <div class="form-floating mt-3">
-                        <input type="text" class="form-control" id="username" placeholder="用户名/邮箱">
-                        <label for="username">用户名/邮箱</label>
+                        <input type="text" class="form-control" name="account" placeholder="用户名/邮箱" required>
+                        <label for="account">用户名/邮箱</label>
                     </div>
                 </div>
                 <div class="col"></div>
@@ -27,7 +26,7 @@
                 <div class="col"></div>
                 <div class="col">
                     <div class="form-floating mt-3 mb-3">
-                        <input type="password" class="form-control" id="password" placeholder="密码">
+                        <input type="password" class="form-control" name="password" placeholder="密码" required>
                         <label for="password">密码</label>
                     </div>
                 </div>
@@ -37,7 +36,7 @@
                 <div class="col"></div>
                 <div class="col">
                     <div class="form-check" style="text-align:center">
-                        <input class="form-check-input" type="checkbox" id="keepme">
+                        <input class="form-check-input" type="checkbox" id="keepme" required checked>
                         <label class="form-check-label" for="keepme">
                             保持登录状态
                         </label>
@@ -48,7 +47,7 @@
             <div class="row mt-3">
                 <div class="col"></div>
                 <div class="col" style="text-align:center">
-                    <button type="button" class="btn btn-primary">登录</button>
+                    <button type="submit" class="btn btn-primary">登录</button>
                 </div>
                 <div class="col"></div>
             </div>
