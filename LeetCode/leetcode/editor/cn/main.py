@@ -71,6 +71,10 @@ def execute(qID: int, mID: int, sName='Solution'):
     arg_names = func.__code__.co_varnames[1:]
     annotation = func.__annotations__
     cases = TEST_CASE.split()
+    if len(cases) == 0:
+        print(f"错误: 没有测试案例")
+        return
+
     if len(cases) % arg_count != 0:
         print(f"测试案例数目不正确，参数应有{arg_count}个，当前数据条目为{len(cases)}个")
         return
@@ -84,4 +88,5 @@ def execute(qID: int, mID: int, sName='Solution'):
 
 
 if __name__ == '__main__':
-    execute(1760, 0)
+    # execute(2865, 0)
+    execute(2944, 0)

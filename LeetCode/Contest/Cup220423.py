@@ -1,5 +1,4 @@
 import math
-import time
 from typing import List
 
 
@@ -114,20 +113,63 @@ class Solution:
 
         return int(dp[end[0]][end[1]])
 
+    def runeReserve(self, runes: List[int]) -> int:
+        runes.sort()
+        res = 1
+        cur = 1
+        for i in range(1, len(runes)):
+            if runes[i] - runes[i - 1] <= 1:
+                cur += 1
+            else:
+                res = max(res, cur)
+                cur = 1
+        res = max(res, cur)
+        return res
+
+    def rampartDefensiveLine(self, rampart: List[List[int]]) -> int:
+        n = [0] * (len(rampart) - 1)
+        for i in range(1, len(rampart)):
+            n[i - 1] = rampart[i][0] - rampart[i - 1][1]
+        mx = 0
+        for i in range(1, len(n)):
+            mx = max(mx, n[i] + n[i - 1])
+
+        def check(x):
+            left = 0
+            for m in n:
+                if m + left >= x:
+                    left = 0
+                elif left > 0:
+                    return False
+                else:
+                    left = x - m - left
+            return left <= 0
+
+        l, r = 0, mx
+        while l < r:
+            m = (l + r) // 2
+            if check(m):
+                l = m + 1
+            else:
+                r = m
+        return l
+
 
 if __name__ == '__main__':
-    matrix = [">^^>><<><>^^>><<><<<><>^^>>", "<^v>v>^^>><<<><>^^>><><v^><", "^v^<>>^^<<><>^^>>>><<><<<>^",
-              "<^v>vv>^^>><<><^><v>^^>><<>", "^v^<><<>^^>v>^^>><<>><<><>^", "<^v>>^^>v>^^>><<>><<><vv^><",
-              "<^v>vv>^^>><<><^><v>^^>><<>", "^v^<><<>^^>v>^^>><<>><<><>^", "<^v>>^^>v>^^>><<>><<><vv^><",
-              "^v^<>^^>><<><><<>^^^>><<><>", "<^v>vv>^^>>^^>><<><><<><^><", "^v^<><<>^^>><<><>^^>><<><>^",
-              ]
-    start = [0, 0]
-    end = [10, 17]
+    # matrix = [">^^>><<><>^^>><<><<<><>^^>>", "<^v>v>^^>><<<><>^^>><><v^><", "^v^<>>^^<<><>^^>>>><<><<<>^",
+    #           "<^v>vv>^^>><<><^><v>^^>><<>", "^v^<><<>^^>v>^^>><<>><<><>^", "<^v>>^^>v>^^>><<>><<><vv^><",
+    #           "<^v>vv>^^>><<><^><v>^^>><<>", "^v^<><<>^^>v>^^>><<>><<><>^", "<^v>>^^>v>^^>><<>><<><vv^><",
+    #           "^v^<>^^>><<><><<>^^^>><<><>", "<^v>vv>^^>>^^>><<><><<><^><", "^v^<><<>^^>><<><>^^>><<><>^",
+    #           ]
+    # start = [0, 0]
+    # end = [10, 17]
     # matrix = [">^^>", "<^v>", "^v^<"]
     # start = [0, 0]
     # end = [1, 3]
     s = Solution()
-    t1 = time.time()
-    print(s.conveyorBelt(matrix, start, end))
-    t2 = time.time()
-    print(t2 - t1)
+    # t1 = time.time()
+    # print(s.conveyorBelt(matrix, start, end))
+    # t2 = time.time()
+    # print(t2 - t1)
+    # print(s.runeReserve(runes=[1, 3, 5, 4, 1, 7, 8, 9, 10]))
+    print(s.rampartDefensiveLine([[3, 5], [12, 29], [31, 38], [39, 42], [43, 44], [46, 47]]))

@@ -1,15 +1,10 @@
-# -*- coding: utf-8 -*- 
-"""
-Description:
-Creator: HarryUp
-Create time: 2021-06-05 16:29
-"""
+from xml.dom import minidom
 
-while (True):
-    a = input("Please input: ")
-    try:
-        b = 100/int(a)
-        print(b)
-    except Exception as e:
-        print(e)
 
+def beautifyXMLString(xmlString):
+    print(minidom.parseString(xmlString).toprettyxml())
+    return minidom.parseString(xmlString).toprettyxml()[23:]
+
+
+xml = '<x><a>bbb</a><c>ddd</c></x>'
+print(beautifyXMLString(xml))

@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00001_!velocityTool.camelCaseName(two-sum).py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC00001_!velocityTool.camelCaseName(two-sum).md" />
+              <option name="frontendQuestionId" value="leetcode.cn1" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00001_!velocityTool.camelCaseName(two-sum).py" />
+              <option name="titleSlug" value="two-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00002_AddTwoNumbers.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC00002_AddTwoNumbers.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00002_AddTwoNumbers.py" />
+              <option name="titleSlug" value="add-two-numbers" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00042_TrappingRainWater.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC00042_TrappingRainWater.md" />
+              <option name="frontendQuestionId" value="leetcode.cn42" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00042_TrappingRainWater.py" />
+              <option name="titleSlug" value="trapping-rain-water" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00051_NQueens.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC00051_NQueens.md" />
+              <option name="frontendQuestionId" value="leetcode.cn51" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00051_NQueens.py" />
+              <option name="titleSlug" value="n-queens" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00052_NQueensIi.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC00052_NQueensIi.md" />
+              <option name="frontendQuestionId" value="leetcode.cn52" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00052_NQueensIi.py" />
+              <option name="titleSlug" value="n-queens-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00102_BinaryTreeLevelOrderTraversal.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC00102_BinaryTreeLevelOrderTraversal.md" />
+              <option name="frontendQuestionId" value="leetcode.cn102" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00102_BinaryTreeLevelOrderTraversal.py" />
+              <option name="titleSlug" value="binary-tree-level-order-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00122_BestTimeToBuyAndSellStockIi.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC00122_BestTimeToBuyAndSellStockIi.md" />
+              <option name="frontendQuestionId" value="leetcode.cn122" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00122_BestTimeToBuyAndSellStockIi.py" />
+              <option name="titleSlug" value="best-time-to-buy-and-sell-stock-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00200_NumberOfIslands.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC00200_NumberOfIslands.md" />
+              <option name="frontendQuestionId" value="leetcode.cn200" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00200_NumberOfIslands.py" />
+              <option name="titleSlug" value="number-of-islands" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00279_PerfectSquares.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC00279_PerfectSquares.md" />
+              <option name="frontendQuestionId" value="leetcode.cn279" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00279_PerfectSquares.py" />
+              <option name="titleSlug" value="perfect-squares" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00600_NonNegativeIntegersWithoutConsecutiveOnes.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC00600_NonNegativeIntegersWithoutConsecutiveOnes.md" />
+              <option name="frontendQuestionId" value="leetcode.cn600" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00600_NonNegativeIntegersWithoutConsecutiveOnes.py" />
+              <option name="titleSlug" value="non-negative-integers-without-consecutive-ones" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00739_DailyTemperatures.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC00739_DailyTemperatures.md" />
+              <option name="frontendQuestionId" value="leetcode.cn739" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00739_DailyTemperatures.py" />
+              <option name="titleSlug" value="daily-temperatures" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00987_VerticalOrderTraversalOfABinaryTree.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC00987_VerticalOrderTraversalOfABinaryTree.md" />
+              <option name="frontendQuestionId" value="leetcode.cn987" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00987_VerticalOrderTraversalOfABinaryTree.py" />
+              <option name="titleSlug" value="vertical-order-traversal-of-a-binary-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01027_LongestArithmeticSubsequence.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01027_LongestArithmeticSubsequence.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1027" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01027_LongestArithmeticSubsequence.py" />
+              <option name="titleSlug" value="longest-arithmetic-subsequence" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01031_MaximumSumOfTwoNonOverlappingSubarrays.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01031_MaximumSumOfTwoNonOverlappingSubarrays.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1031" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01031_MaximumSumOfTwoNonOverlappingSubarrays.py" />
+              <option name="titleSlug" value="maximum-sum-of-two-non-overlapping-subarrays" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01041_RobotBoundedInCircle.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01041_RobotBoundedInCircle.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1041" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01041_RobotBoundedInCircle.py" />
+              <option name="titleSlug" value="robot-bounded-in-circle" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01125_SmallestSufficientTeam.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01125_SmallestSufficientTeam.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1125" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01125_SmallestSufficientTeam.py" />
+              <option name="titleSlug" value="smallest-sufficient-team" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01162_AsFarFromLandAsPossible.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01162_AsFarFromLandAsPossible.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1162" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01162_AsFarFromLandAsPossible.py" />
+              <option name="titleSlug" value="as-far-from-land-as-possible" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01237_FindPositiveIntegerSolutionForAGivenEquation.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01237_FindPositiveIntegerSolutionForAGivenEquation.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1237" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01237_FindPositiveIntegerSolutionForAGivenEquation.py" />
+              <option name="titleSlug" value="find-positive-integer-solution-for-a-given-equation" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01254_NumberOfClosedIslands.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01254_NumberOfClosedIslands.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1254" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01254_NumberOfClosedIslands.py" />
+              <option name="titleSlug" value="number-of-closed-islands" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01383_MaximumPerformanceOfATeam.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01383_MaximumPerformanceOfATeam.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1383" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01383_MaximumPerformanceOfATeam.py" />
+              <option name="titleSlug" value="maximum-performance-of-a-team" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1438" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01438_LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.py" />
+              <option name="titleSlug" value="longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01499_MaxValueOfEquation.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01499_MaxValueOfEquation.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1499" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01499_MaxValueOfEquation.py" />
+              <option name="titleSlug" value="max-value-of-equation" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01552_MagneticForceBetweenTwoBalls.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01552_MagneticForceBetweenTwoBalls.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1552" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01552_MagneticForceBetweenTwoBalls.py" />
+              <option name="titleSlug" value="magnetic-force-between-two-balls" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01658_MinimumOperationsToReduceXToZero.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01658_MinimumOperationsToReduceXToZero.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1658" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01658_MinimumOperationsToReduceXToZero.py" />
+              <option name="titleSlug" value="minimum-operations-to-reduce-x-to-zero" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01753_MaximumScoreFromRemovingStones.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01753_MaximumScoreFromRemovingStones.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1753" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01753_MaximumScoreFromRemovingStones.py" />
+              <option name="titleSlug" value="maximum-score-from-removing-stones" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01754_LargestMergeOfTwoStrings.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01754_LargestMergeOfTwoStrings.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1754" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01754_LargestMergeOfTwoStrings.py" />
+              <option name="titleSlug" value="largest-merge-of-two-strings" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01760_MinimumLimitOfBallsInABag.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01760_MinimumLimitOfBallsInABag.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1760" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01760_MinimumLimitOfBallsInABag.py" />
+              <option name="titleSlug" value="minimum-limit-of-balls-in-a-bag" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01971_!velocityTool.camelCaseName(find-if-path-exists-in-graph).py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01971_FindIfPathExistsInGraph.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1971" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01971_FindIfPathExistsInGraph.py" />
+              <option name="titleSlug" value="find-if-path-exists-in-graph" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01971_FindIfPathExistsInGraph.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01971_FindIfPathExistsInGraph.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1971" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01971_FindIfPathExistsInGraph.py" />
+              <option name="titleSlug" value="find-if-path-exists-in-graph" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01971_find-if-path-exists-in-graph.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01971_FindIfPathExistsInGraph.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1971" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01971_FindIfPathExistsInGraph.py" />
+              <option name="titleSlug" value="find-if-path-exists-in-graph" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC02398_MaximumNumberOfRobotsWithinBudget.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC02398_MaximumNumberOfRobotsWithinBudget.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2398" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC02398_MaximumNumberOfRobotsWithinBudget.py" />
+              <option name="titleSlug" value="maximum-number-of-robots-within-budget" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC02439_MinimizeMaximumOfArray.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC02439_MinimizeMaximumOfArray.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2439" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC02439_MinimizeMaximumOfArray.py" />
+              <option name="titleSlug" value="minimize-maximum-of-array" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC02560_HouseRobberIv.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC02560_HouseRobberIv.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2560" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC02560_HouseRobberIv.py" />
+              <option name="titleSlug" value="house-robber-iv" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC02616_MinimizeTheMaximumDifferenceOfPairs.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC02616_MinimizeTheMaximumDifferenceOfPairs.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2616" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC02616_MinimizeTheMaximumDifferenceOfPairs.py" />
+              <option name="titleSlug" value="minimize-the-maximum-difference-of-pairs" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC02865_BeautifulTowersI.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC02865_BeautifulTowersI.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2865" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC02865_BeautifulTowersI.py" />
+              <option name="titleSlug" value="beautiful-towers-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC02944_MinimumNumberOfCoinsForFruits.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC02944_MinimumNumberOfCoinsForFruits.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2944" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC02944_MinimumNumberOfCoinsForFruits.py" />
+              <option name="titleSlug" value="minimum-number-of-coins-for-fruits" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC03034_NumberOfSubarraysThatMatchAPatternI.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC03034_NumberOfSubarraysThatMatchAPatternI.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3034" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC03034_NumberOfSubarraysThatMatchAPatternI.py" />
+              <option name="titleSlug" value="number-of-subarrays-that-match-a-pattern-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/leetcode/editor/cn/01971_find-if-path-exists-in-graph.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01971_FindIfPathExistsInGraph.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1971" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01971_FindIfPathExistsInGraph.py" />
+              <option name="titleSlug" value="find-if-path-exists-in-graph" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/leetcode/editor/cn/LC(01971_find-if-path-exists-in-graph).py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01971_FindIfPathExistsInGraph.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1971" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01971_FindIfPathExistsInGraph.py" />
+              <option name="titleSlug" value="find-if-path-exists-in-graph" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/leetcode/editor/cn/LC+01971_find-if-path-exists-in-graph.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01971_FindIfPathExistsInGraph.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1971" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01971_FindIfPathExistsInGraph.py" />
+              <option name="titleSlug" value="find-if-path-exists-in-graph" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/leetcode/editor/cn/LC01971_find-if-path-exists-in-graph.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01971_FindIfPathExistsInGraph.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1971" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01971_FindIfPathExistsInGraph.py" />
+              <option name="titleSlug" value="find-if-path-exists-in-graph" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/leetcode/editor/cn/LC_01971_find-if-path-exists-in-graph.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01971_FindIfPathExistsInGraph.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1971" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01971_FindIfPathExistsInGraph.py" />
+              <option name="titleSlug" value="find-if-path-exists-in-graph" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/leetcode/editor/cn/[1971]find-if-path-exists-in-graph.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01971_FindIfPathExistsInGraph.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1971" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01971_FindIfPathExistsInGraph.py" />
+              <option name="titleSlug" value="find-if-path-exists-in-graph" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/leetcode/editor/cn/[2865]美丽塔 I.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC02865_BeautifulTowersI.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2865" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC02865_BeautifulTowersI.py" />
+              <option name="titleSlug" value="beautiful-towers-i" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00306_AdditiveNumber.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/doc/content/LC00306_AdditiveNumber.md" />
+              <option name="frontendQuestionId" value="leetcode.cn306" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00306_AdditiveNumber.py" />
+              <option name="titleSlug" value="additive-number" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00375_GuessNumberHigherOrLowerIi.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/doc/content/LC00375_GuessNumberHigherOrLowerIi.md" />
+              <option name="frontendQuestionId" value="leetcode.cn375" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00375_GuessNumberHigherOrLowerIi.py" />
+              <option name="titleSlug" value="guess-number-higher-or-lower-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00486_PredictTheWinner.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/doc/content/LC00486_PredictTheWinner.md" />
+              <option name="frontendQuestionId" value="leetcode.cn486" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00486_PredictTheWinner.py" />
+              <option name="titleSlug" value="predict-the-winner" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00744_FindSmallestLetterGreaterThanTarget.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/doc/content/LC00744_FindSmallestLetterGreaterThanTarget.md" />
+              <option name="frontendQuestionId" value="leetcode.cn744" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00744_FindSmallestLetterGreaterThanTarget.py" />
+              <option name="titleSlug" value="find-smallest-letter-greater-than-target" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC01025_DivisorGame.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/doc/content/LC01025_DivisorGame.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1025" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC01025_DivisorGame.py" />
+              <option name="titleSlug" value="divisor-game" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC01036_EscapeALargeMaze.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/doc/content/LC01036_EscapeALargeMaze.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1036" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC01036_EscapeALargeMaze.py" />
+              <option name="titleSlug" value="escape-a-large-maze" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC01576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/doc/content/LC01576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1576" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC01576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters.py" />
+              <option name="titleSlug" value="replace-all-s-to-avoid-consecutive-repeating-characters" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="/var/folders/15/kr0lpqt511scc5n7svq5txq00000gn/T/leetcode/editor/cn/[1971]find-if-path-exists-in-graph.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC01971_FindIfPathExistsInGraph.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1971" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC01971_FindIfPathExistsInGraph.py" />
+              <option name="titleSlug" value="find-if-path-exists-in-graph" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
