@@ -1,10 +1,11 @@
 import os
+import re
 from itertools import zip_longest
 
-from LeetCode.test.wrapper import timeit_log, timeit_print
+from LeetCode.test.wrapper import timer_log, timer
 
 
-@timeit_print
+@timer
 def compare_files(a, b):
     if not os.path.exists(a):
         print(f"file [{a}] not exists")
@@ -23,5 +24,15 @@ def compare_files(a, b):
         print(f'一共 {j} 个不同的地方')
 
 
+def remove_duplicate_blocks(markdown_content):
+    # 使用正则表达式匹配Markdown段落
+    blocks = re.findall(r'(^.*?$\n){2,}', markdown_content, re.MULTILINE)
+    for block in blocks:
+        markdown_content = markdown_content.replace(block, block.split('\n')[0] + '\n')
+    return markdown_content
+
+
 if __name__ == '__main__':
-    compare_files('/Users/hang/Downloads/P3379_1.out', 'test.out')
+    # compare_files('/Users/hang/Downloads/P3379_1.out', 'test.out')
+    c = input()
+    print(remove_duplicate_blocks(c))

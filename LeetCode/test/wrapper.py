@@ -5,7 +5,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
                     filename=f'log/wrapper_log_{time.strftime('%Y%m%d', time.localtime())}.log', filemode='a')
 
 
-def timeit_log(func):
+def timer_log(func):
     def wrapper(*args, **kwargs):
         start_time = time.time()
         result = func(*args, **kwargs)
@@ -18,7 +18,7 @@ def timeit_log(func):
     return wrapper
 
 
-def timeit_print(func):
+def timer(func):
     def wrapper(*args, **kwargs):
         start_time = time.time()
         result = func(*args, **kwargs)

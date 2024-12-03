@@ -4,7 +4,7 @@ import sys
 from collections import defaultdict
 from itertools import accumulate
 
-from LeetCode.test.wrapper import timeit_print, timeit_log
+from LeetCode.test.wrapper import timer, timer_log
 
 sys.setrecursionlimit(600000)
 
@@ -80,7 +80,7 @@ def a5():
     print(ans // 2)
 
 
-@timeit_log
+@timer_log
 def p3379_file():
     with open('/Users/hang/Downloads/P3379_1.in', 'r') as fr, open('test.out', 'w') as fw:
         n, m, root = map(int, fr.readline().split(' '))
@@ -93,7 +93,7 @@ def p3379_file():
         pa = [[-1] * h for _ in range(n + 1)]
         depth = [0] * (n + 1)
 
-        @timeit_log
+        @timer_log
         def build_tree(x, fa, d):
             pa[x][0] = fa
             depth[x] = d
@@ -143,7 +143,7 @@ def p3379():
     pa = [[-1] * h for _ in range(n + 1)]
     depth = [0] * (n + 1)
 
-    @timeit_print
+    @timer
     def build_tree(x, fa, d):
         pa[x][0] = fa
         depth[x] = d

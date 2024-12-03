@@ -6,10 +6,10 @@
         <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00001_!velocityTool.camelCaseName(two-sum).py">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC00001_!velocityTool.camelCaseName(two-sum).md" />
+              <option name="contentPath" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/doc/content/LC00001_TwoSum.md" />
               <option name="frontendQuestionId" value="leetcode.cn1" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00001_!velocityTool.camelCaseName(two-sum).py" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00001_TwoSum.py" />
               <option name="titleSlug" value="two-sum" />
             </LeetcodeEditor>
           </value>
@@ -50,10 +50,10 @@
         <entry key="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00052_NQueensIi.py">
           <value>
             <LeetcodeEditor>
-              <option name="contentPath" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/doc/content/LC00052_NQueensIi.md" />
+              <option name="contentPath" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/doc/content/LC00052_N-Queens II.md" />
               <option name="frontendQuestionId" value="leetcode.cn52" />
               <option name="host" value="leetcode.cn" />
-              <option name="path" value="$USER_HOME$/Documents/PycharmProjects/Noob/LeetCode/leetcode/editor/cn/LC00052_NQueensIi.py" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00052_N-Queens II.py" />
               <option name="titleSlug" value="n-queens-ii" />
             </LeetcodeEditor>
           </value>
@@ -487,6 +487,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00001_TwoSum.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/doc/content/LC00001_TwoSum.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00001_TwoSum.py" />
+              <option name="titleSlug" value="two-sum" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00052_N-Queens II.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/doc/content/LC00052_N-Queens II.md" />
+              <option name="frontendQuestionId" value="leetcode.cn52" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00052_N-Queens II.py" />
+              <option name="titleSlug" value="n-queens-ii" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC00306_AdditiveNumber.py">
           <value>
             <LeetcodeEditor>
@@ -561,6 +583,28 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC01576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters.py" />
               <option name="titleSlug" value="replace-all-s-to-avoid-consecutive-repeating-characters" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC03274_Check if Two Chessboard Squares Have the Same Color.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/doc/content/LC03274_CheckIfTwoChessboardSquaresHaveTheSameColor.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3274" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC03274_CheckIfTwoChessboardSquaresHaveTheSameColor.py" />
+              <option name="titleSlug" value="check-if-two-chessboard-squares-have-the-same-color" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC03274_CheckIfTwoChessboardSquaresHaveTheSameColor.py">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/doc/content/LC03274_CheckIfTwoChessboardSquaresHaveTheSameColor.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3274" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/LeetCode/leetcode/editor/cn/LC03274_CheckIfTwoChessboardSquaresHaveTheSameColor.py" />
+              <option name="titleSlug" value="check-if-two-chessboard-squares-have-the-same-color" />
             </LeetcodeEditor>
           </value>
         </entry>

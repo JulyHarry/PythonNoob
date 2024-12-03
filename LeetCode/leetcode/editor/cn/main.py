@@ -3,6 +3,8 @@ import importlib
 import typing
 import os
 
+from LeetCode.test.timer_wrapper import timer
+
 
 def convert_type(arg, var_type):
     if var_type == int:
@@ -37,6 +39,7 @@ def convert_type(arg, var_type):
         return str(arg)
 
 
+@timer
 def execute(qID: int, mID: int, sName='Solution'):
     nqID = "0" * (5 - len(str(qID))) + str(qID)
     filenames = [x for x in os.listdir('.') if x.startswith(f'LC{nqID}')]
@@ -89,4 +92,4 @@ def execute(qID: int, mID: int, sName='Solution'):
 
 if __name__ == '__main__':
     # execute(2865, 0)
-    execute(2944, 0)
+    execute(1, 0)

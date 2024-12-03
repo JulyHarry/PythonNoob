@@ -15,11 +15,20 @@
       <jdbc-url>jdbc:mysql://172.17.0.2:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="@114.115.180.222" uuid="ca80bd3d-3a46-41d8-bed5-d68d5266a73e">
+    <data-source source="LOCAL" name="114.115.180.222" uuid="ca80bd3d-3a46-41d8-bed5-d68d5266a73e">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://114.115.180.222:3306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="Django" uuid="47eb4497-fa7e-4942-8dbd-7715408495a1">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/Django/Tutorial/Tutorial/settings.py</remarks>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://127.0.0.1:3306/py</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

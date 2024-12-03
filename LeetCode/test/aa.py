@@ -2,9 +2,10 @@
 import bisect
 import heapq
 import math
-from collections import defaultdict, Counter
+import re
+from collections import defaultdict, Counter, deque
 import time
-from functools import cache
+from functools import cache, lru_cache
 from itertools import accumulate
 from math import isqrt, inf
 from typing import List
@@ -12,7 +13,7 @@ from typing import List
 from _heapq import *
 from sortedcontainers import SortedList
 
-from LeetCode.test.wrapper import timeit_log
+from LeetCode.test.wrapper import timer_log
 
 
 def lastNonEmptyString(s: str) -> str:
@@ -475,7 +476,7 @@ class Solution:
             ans.append(i)
         return ans
 
-    @timeit_log
+    @timer_log
     def minimumSubarrayLength(self, nums: List[int], k: int) -> int:
         cnt = [0] * 31
         res = l = 0
@@ -520,6 +521,363 @@ class Solution:
         for i, num in enumerate(nums[1:], start=1):
             f[i] = 1 + (f[i - 1] if num != nums[i - 1] else 0)
         return sum(f)
+
+    def findNumberOfLIS(self, nums: List[int]) -> int:
+        n = len(nums)
+        f = [1] * n
+        cnt = [1] * n
+        for i in range(n):
+            for j in range(i):
+                if nums[i] > nums[j]:
+                    f[i] = max(f[i], f[j] + 1)
+        for i in range(1, n):
+            if f[i] == f[i - 1]:
+                cnt[i] = cnt[i - 1] + 1
+            else:
+                cnt[i] = cnt[i - 1]
+        return cnt[-1]
+
+    def numberOfSpecialChars(self, word: str) -> int:
+        s = [0] * 26
+        for w in word:
+            s[ord(w.lower()) - ord('a')] |= ord(w) - ord(w.lower()) + 1
+        ans = 0
+        for x in s:
+            if x > 25:
+                ans += 1
+        return ans
+
+    def numberOfSpecialChars1(self, word: str) -> int:
+        l = [0] * 26
+        u = [0] * 26
+        for w in word:
+            if ord('a') <= ord(w) <= ord('z'):
+                if u[ord(w.upper()) - ord('A')] == 1:
+                    l[ord(w) - ord('a')] = 0
+                else:
+                    l[ord(w) - ord('a')] = 1
+            else:
+                u[ord(w) - ord('A')] = 1
+        ans = 0
+        for x, y in zip(l, u):
+            if x == y == 1:
+                ans += 1
+        return ans
+
+    def minimumOperations(self, grid: List[List[int]]) -> int:
+        m, n = len(grid), len(grid[0])
+        f = [[0] * 10 for _ in range(n)]
+        for j in range(n):
+            d = defaultdict(int)
+            for i in range(m):
+                d[grid[i][j]] += 1
+            for k in range(10):
+                f[j][k] = m - d[k]
+
+        g = [[inf] * 10 for _ in range(n)]
+        g[0] = f[0]
+        for i in range(1, n):
+            for j in range(10):
+                for k in range(10):
+                    if j != k:
+                        g[i][j] = min(g[i][j], g[i - 1][k] + f[i][k])
+
+        return min(f[-1])
+
+    def findAnswer(self, n, edges):
+        graph = [[] for _ in range(n)]
+        for i, (u, v, d) in enumerate(edges):
+            graph[u].append((v, d, i))
+            graph[v].append((u, d, i))
+
+        d = [inf] * n
+        d[0] = 0
+        pq = [(0, 0)]
+        while pq:
+            cd, cn = heapq.heappop(pq)
+            if cd > d[cn]:
+                continue
+            for nn, nd, _ in graph[cn]:
+                if d[cn] + nd < d[nn]:
+                    d[nn] = d[cn] + nd
+                    heapq.heappush(pq, (d[nn], nn))
+
+        answer = [False] * len(edges)
+        visited = [False] * n
+
+        def dfs(node, dist):
+            if node == 0:
+                visited[0] = True
+                return
+            for pn, pd, i in graph[node]:
+                if dist - pd == d[pn]:
+                    dfs(pn, dist - pd)
+                    if visited[pn]:
+                        answer[i] = True
+                        visited[node] = True
+
+        if d[-1] == inf:
+            return answer
+        dfs(n - 1, d[n - 1])
+
+        return answer
+
+    def combinationSum3(self, k: int, n: int) -> List[List[int]]:
+        cur = []
+        ans = []
+
+        def dfs(i, j, m):
+            # i: 当前值 j: 个数 m: 开始循环
+            if i > n or j > k or m > 10:
+                return
+            if i == n and j == k:
+                ans.append(cur.copy())
+                return
+            dfs(i, j, m + 1)
+            cur.append(m)
+            dfs(i + m, j + 1, m + 1)
+            cur.pop()
+
+        dfs(0, 0, 1)
+
+        return ans
+
+    def findOriginalArray(self, changed: List[int]) -> List[int]:
+        n = len(changed)
+        if n & 1:
+            return []
+        changed.sort()
+        cnt = Counter(changed)
+        ans = []
+        for i in range(n):
+            c = changed[i]
+            nw = 2 * c
+            if cnt[c] > 0 and cnt[nw] > 0:
+                cnt[nw] -= 1
+                cnt[c] -= 1
+                ans.append(changed[i])
+        print(cnt)
+        for v in cnt.values():
+            if v != 0:
+                return []
+        return ans
+
+    def numDecodings(self, s: str) -> int:
+        @cache
+        def dfs(i):
+            if i == 0:
+                return 1
+            if i < 0:
+                return 0
+            print(s[i])
+            ans = dfs(i - 1)
+            if i >= 1 and s[i - 1] != 0 and int(s[i - 1: i + 1]) <= 26:
+                print(s[i - 1: i + 1])
+                ans += dfs(i - 2)
+            return ans
+
+        return dfs(len(s) - 1)
+
+    def distanceTraveled(self, mainTank: int, additionalTank: int) -> int:
+        ans = 0
+        while mainTank > 0:
+            ans += mainTank // 5 * 5 * 10
+            if mainTank < 5:
+                break
+            supply = min(additionalTank, mainTank // 5)
+            mainTank = mainTank % 5 + supply
+            additionalTank -= supply
+        return ans
+
+    def canMakeSquare(self, grid: List[List[str]]) -> bool:
+        x = [[0, 2], [1, 3]]
+        y = [[0, 2], [1, 3]]
+        for s1, s2 in x:
+            for t1, t2 in y:
+                cnt1, cnt2 = 0, 0
+                for a in grid[s1:s2]:
+                    for b in a[t1:t2]:
+                        if b == 'B':
+                            cnt1 += 1
+                        else:
+                            cnt2 += 1
+
+                if cnt1 == 3 or cnt2 == 3:
+                    return True
+        return False
+
+    def numberOfStableArrays(self, zero: int, one: int, limit: int) -> int:
+        MOD = 10 ** 9 + 7
+
+        @cache
+        def dfs(i, j):
+            if i == 0 and j == 0:
+                return 1
+            ans = 0
+            for x in range(min(limit, i) + 1):
+                for y in range(min(limit, j) + 1):
+                    if x + y >= 1:
+                        ans += dfs(i - x, j - y) % MOD
+            return ans % MOD
+
+        return dfs(one, zero)
+
+    def minimumAddedInteger(self, nums1: List[int], nums2: List[int]) -> int:
+        s = Counter(nums1)
+        nums2.sort()
+        ans = inf
+        for a in nums1:
+            c = s.copy()
+            cur = nums2[0] - a
+            flag = True
+            for b in nums2:
+                if c[b - cur] > 0:
+                    c[b - cur] -= 1
+                else:
+                    flag = False
+                    continue
+            if flag:
+                ans = min(ans, cur)
+        return ans
+
+    def minEnd(self, n: int, x: int) -> int:
+        m = bin(x)[2:]
+        t = bin(n - 1)[2:]
+        ans = list(m)
+        e = len(t) - 1
+        for i in range(len(m) - 1, -1, -1):
+            if m[i] == '0' and e >= 0:
+                ans[i] = t[e]
+                e -= 1
+        if e >= 0:
+            ans = list(t[:e + 1]) + ans
+        return int(''.join(ans), 2)
+
+    def cherryPickup(self, grid: List[List[int]]) -> int:
+        m, n = len(grid), len(grid[0])
+
+        f = [[[-inf] * n for _ in range(n)] for _ in range(m)]
+        f[0][0][n - 1] = grid[0][0] + grid[0][n - 1]
+        for i in range(1, m):
+            for j in range(n):
+                for k in range(n):
+                    for s in (-1, 0, 1):
+                        p = j + s
+                        if p < 0 or p >= n:
+                            continue
+                        for t in (-1, 0, 1):
+                            q = k + t
+                            if q < 0 or q >= n:
+                                continue
+                            v = grid[i][j] if j == k else grid[i][j] + grid[i][k]
+                            f[i][j][k] = max(f[i][j][k], f[i - 1][p][q] + v)
+        mx = 0
+        for x in f[-1]:
+            for y in x:
+                if y > mx:
+                    mx = y
+        return mx
+
+    def wateringPlants(self, plants: List[int], capacity: int) -> int:
+        ans = 0
+        l = capacity
+        i = 0
+        while i < len(plants):
+            if l < plants[i]:
+                ans += 2 * i
+                l = capacity
+            print(l, i, ans)
+            l -= plants[i]
+            i += 1
+            ans += 1
+        return ans
+
+    def maximumEnergy(self, energy: List[int], k: int) -> int:
+        ans = -math.inf
+        for s in range(k):
+            x = energy[s::k]
+            f = [x[0]] + [-math.inf] * (len(x) - 1)
+            for i in range(1, len(x)):
+                f[i] = max(f[i - 1] + x[i], x[i])
+            ans = max(ans, f[-1])
+        return ans
+
+        # for y in range(n):
+
+        # return max(c for r in f for c in r)
+
+    def distributeCandies(self, n: int, limit: int) -> int:
+        @cache
+        def dfs(i, k):
+            if k <= 0 or i > limit * k:
+                return 0
+            if i <= limit and k == 1:
+                return 1
+            ans = 0
+            for j in range(min(i + 1, limit + 1)):
+                ans += dfs(i - j, k - 1)
+            return ans
+
+        return dfs(n, 3)
+
+    def countDays(self, days: int, meetings: List[List[int]]) -> int:
+        meetings.sort(key=lambda a: a[0])
+        last = meetings[0][1]
+        start = meetings[0][0]
+        for i, (x, y) in enumerate(meetings):
+            if last < x:
+                days -= last - start + 1
+                start = x
+                last = y
+            else:
+                last = max(last, y)
+        days -= last - start + 1
+        return days
+
+    def clearDigits(self, s: str) -> str:
+        p = []
+        for i, x in enumerate(s):
+            if x.isdigit():
+                p.pop()
+            else:
+                p.append(i)
+        return ''.join([s[i] for i in p])
+
+    def findWinningPlayer(self, skills: List[int], k: int) -> int:
+        n = len(skills)
+        cur = 0
+        cnt = 0
+        i = 1
+        while cur < n:
+            if skills[i % n] > skills[cur]:
+                cur = i
+                cnt = 1
+            else:
+                cnt += 1
+            if cnt == k:
+                return cur
+            i += 1
+        return cur
+
+    def maximumLength(self, nums: List[int], k: int) -> int:
+        n = len(nums)
+        res = 1
+
+        @cache
+        def dfs(i, k):
+            ans = 1
+            for j in range(i):
+                if nums[i] == nums[j]:
+                    ans = max(ans, dfs(j, k) + 1)
+                elif k >= 1:
+                    ans = max(ans, dfs(j, k - 1) + 1)
+            nonlocal res
+            res = max(res, ans)
+            return ans
+
+        for i in range(n):
+            dfs(i, k)
+        return res
 
 
 class Trie:
@@ -567,6 +925,36 @@ class TreeAncestor:
         return node
 
 
+class SnapshotArray:
+
+    def __init__(self, length: int):
+        self.s = 0
+        self.n = [{0: 0} for _ in range(length)]
+
+    def set(self, index: int, val: int) -> None:
+        self.n[index][self.s] = val
+
+    def snap(self) -> int:
+        self.s += 1
+        return self.s - 1
+
+    def get(self, index: int, snap_id: int) -> int:
+        l = self.find(index, snap_id)
+        print(l)
+        return self.n[index][l]
+
+    def find(self, index, snapid):
+        nums = list(self.n[index].keys())
+        l, r = 0, len(nums) - 1
+        while l < r:
+            m = (l + r + 1) // 2
+            if nums[m] <= snapid:
+                l = m
+            else:
+                r = m - 1
+        return nums[l]
+
+
 if __name__ == '__main__':
     s = Solution()
 
@@ -604,5 +992,53 @@ if __name__ == '__main__':
     # print(s.stringIndices(wordsContainer=["abcd", "bcd", "xbcd"], wordsQuery=["cd", "bcd", "xyz"]))
     # print(s.stringIndices(wordsContainer=["abcdefgh", "poiuygh", "ghghgh"], wordsQuery=["gh", "acbfgh", "acbfegh"]))
     # print(bin(30))
-    print(s.minimumSubarrayLength(nums=[2 * 10 ** 9, 2], k=0))
+    # print(s.minimumSubarrayLength(nums=[2 * 10 ** 9, 2], k=0))
     # print(math.log(2, 2))
+    # print(ord('a'), ord('A'))
+    # print(s.minimumOperations([[1, 1, 1, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, 1, 1]]))
+    # print(s.findAnswer(n=3, edges=[[2, 1, 6]]))
+    # print(s.combinationSum3(2, 12))
+    # print(s.findOriginalArray([1, 3, 4, 2, 6, 8, 7, 8]))
+    # print(s.numDecodings("226"))
+    # a = r"[0-9a-f]+"
+    # x = '123admyffc79pt'
+    # print(re.split(a, x))
+    # print(s.distanceTraveled(5, 1))
+    # t = SnapshotArray(1)
+    # # t.set(0, 5)
+    # t.snap()
+    # t.snap()
+    # t.set(0, 4)
+    # t.snap()
+    # # t.get(0, 1)
+    # t.set(0, 12)
+    # # t.get(0, 1)
+    # t.snap()
+    # print(t.n)
+    # print(t.get(0, 3))
+    # print(s.canMakeSquare([["B", "W", "B"], ["W", "B", "W"], ["B", "W", "B"]]))
+    # print(s.canMakeSquare([["B", "W", "B"], ["B", "W", "W"], ["B", "W", "W"]]))
+    # print(s.numberOfStableArrays(1, 1, 2))
+    # print(s.numberOfStableArrays(1, 2, 1))
+    # print(s.numberOfStableArrays(3, 3, 2))
+    # print(s.numberOfStableArrays(19, 15, 15))
+    # print(s.minimumAddedInteger(nums1=[4, 20, 16, 12, 8], nums2=[14, 18, 10]))
+    # print(s.minimumAddedInteger(nums1=[3, 5, 5, 3], nums2=[7, 7]))
+    # print(s.minimumAddedInteger([9, 9, 1, 1, 1], [5, 5, 5]))
+    # print(s.minEnd(3, 19))
+    # print(s.minEnd(4, 19))
+    # print(s.minEnd(5, 19))
+    # print(s.minEnd(10, 19))
+    # print(s.minEnd(3, 2))
+    # print(s.cherryPickup([[3, 1, 1], [2, 5, 1], [1, 5, 5], [2, 1, 1]]))
+    # print(s.wateringPlants([2, 2, 3, 3], 5))
+    # print(s.distributeCandies(3, 3))
+    # print(s.countDays(10, [[5, 7], [1, 3], [9, 10]]))
+    # print(s.clearDigits("cab34"))
+    # print(s.findWinningPlayer([4, 18, 17, 20, 15, 12, 8, 5], 1))
+    # print(s.findWinningPlayer([16, 4, 7, 17], 1000324))
+    # print(s.findWinningPlayer([4, 2, 6, 3, 9], k=2))
+    # print(s.findWinningPlayer([2, 5, 4], k=3))
+    print(s.maximumLength([1, 2, 3, 4, 5, 1], 0))
+    print(s.maximumLength([3, 3, 2], 0))
+    print(s.maximumLength([1, 2, 1, 1, 3], 2))
